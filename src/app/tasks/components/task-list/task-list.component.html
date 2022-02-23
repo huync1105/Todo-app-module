@@ -1,0 +1,11 @@
+<ul class="task-list" *ngIf="tasks">
+  <li  *ngFor="let task of tasks; trackBy:identify">
+    <a>
+      <span>{{task.content}}</span>
+    </a>
+    <div class="del">
+      <app-del-btn></app-del-btn>
+    </div>
+</li>
+</ul>
+

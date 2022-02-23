@@ -1,0 +1,7 @@
+<input 
+  type="text"
+  placeholder="Add your new todo"
+  [(ngModel)]="value"
+>
+
+<app-add-btn (click)="addNewItem(value);value=''" ></app-add-btn>

@@ -1,0 +1,27 @@
+<div id="wrapper">
+
+  <div class="app">
+    <!-- title -->
+    <h1>Todo App</h1>
+
+    <!-- add task -->
+    <div class="add-task">
+      <app-input 
+      (newItemEvent)="addTask($event)"
+      ></app-input>
+    </div>
+
+    <!-- tasks list -->
+    <div class="tasks-list">
+      <app-task-list [tasks]="tasks"></app-task-list>
+    </div>
+
+    <!-- clear task -->
+    <div class="clear-task">
+      <p>You have {{tasks.length}} pending task</p>
+      <app-clear-btn [tasks]="tasks"></app-clear-btn>
+    </div>
+
+  </div>
+
+</div>

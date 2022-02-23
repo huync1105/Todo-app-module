@@ -1,0 +1,40 @@
+.task-list {
+  list-style-type: none;
+  width: calc(100% + 17px);
+  max-height: 100%;
+  overflow-y: scroll;
+  padding-right: 17px;
+  box-sizing: content-box;
+}
+
+.task-list li {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 6px;
+  border-radius: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task-list li a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.task-list li:hover {
+  background: rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+}
+
+.del {
+  display: none;
+}
+
+.task-list li:hover .del {
+  display: block;
+}
