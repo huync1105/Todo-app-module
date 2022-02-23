@@ -1,0 +1,11 @@
+.done-btn {
+  padding: 6px;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.3);
+  border-radius: 2px
+}
+
+.checked {
+  background-color: rgb(79, 243, 73);
+  color: rgba(255, 255, 255, 1)
+}

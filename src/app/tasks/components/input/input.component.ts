@@ -14,9 +14,9 @@ export class InputComponent implements OnInit {
 
   addNewItem(value: string) {
     this.newItemEvent.emit(value);
-    console.log(value);
-    
   } 
+
+
 
   constructor() { }
 

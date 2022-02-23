@@ -8,6 +8,7 @@ import { InputComponent } from './components/input/input.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
 import { DelBtnComponent } from './components/del-btn/del-btn.component';
 import { FormsModule } from '@angular/forms';
+import { DoneBtnComponent } from './components/done-btn/done-btn.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     AddBtnComponent,
     InputComponent,
     TaskListComponent,
-    DelBtnComponent
+    DelBtnComponent,
+    DoneBtnComponent
   ],
   imports: [
     CommonModule,

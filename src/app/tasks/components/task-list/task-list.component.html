@@ -1,10 +1,14 @@
 <ul class="task-list" *ngIf="tasks">
-  <li  *ngFor="let task of tasks; trackBy:identify">
+  <li  *ngFor="let task of tasks" [class.done]="task.done">
+    <app-done-btn 
+      [done]="task.done"
+      (click)="checkDone(task)"
+    ></app-done-btn>
     <a>
       <span>{{task.content}}</span>
     </a>
     <div class="del">
-      <app-del-btn></app-del-btn>
+      <app-del-btn (click)="deleteTask(task)"></app-del-btn>
     </div>
 </li>
 </ul>

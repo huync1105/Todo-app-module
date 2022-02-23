@@ -13,13 +13,13 @@
 
     <!-- tasks list -->
     <div class="tasks-list">
-      <app-task-list [tasks]="tasks"></app-task-list>
+      <app-task-list [tasks]="tasks" (getTasks)="updateDelete($event)"></app-task-list>
     </div>
 
     <!-- clear task -->
     <div class="clear-task">
       <p>You have {{tasks.length}} pending task</p>
-      <app-clear-btn [tasks]="tasks"></app-clear-btn>
+      <app-clear-btn (click)="deleteAllTask()"></app-clear-btn>
     </div>
 
   </div>
